@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+p{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+@import "_vars";
+
+.container {
+  width: $width__container;
+  margin: 0 auto;
+}
+
+/*Header*/
+
+header{
+  margin-bottom: 20px;
+}
+
+.header__top {
+  background-color: #f6f6f6;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu__left__link,
+.top-menu__right__link {
+  font-family: MerriweatherSans, sans-serif;
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  line-height: 1.73;
+}
+
+.top-menu__left__link:not(:last-child),
+.top-menu__right__link:not(:last-child) {
+  padding-right: 40px;
+}
+
+.top-menu__right__link .fa-angle-down {
+  padding-left: 4px;
+}
+
+.down-menu__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+//.down-menu__logo {
+//  margin-top: 43px;
+//}
+
+.down-menu__left span {
+  font-family: MerriweatherSans, sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #454545;
+  margin-left: 5px;
+}
+
+.down-menu__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: MerriweatherSans, sans-serif;
+  font-size: 11px;
+  text-align: left;
+  color: #7e7e7e;
+  border: solid 1px #e1e1e1;
+  background-color: #fff;
+  margin-top: 16px;
+}
+
+.down-menu__search span {
+  padding: 10px 142px 10px 10px;
+}
+
+.down-menu__search .fa-magnifying-glass {
+  padding: 10px 10px 10px 0;
+}
+
+.down-menu__input {
+  margin-left: auto;
+}
+
+.down-menu__right__input {
+  font-family: MerriweatherSans, sans-serif;
+  font-size: 11px;
+  text-align: left;
+  color: #7e7e7e;
+  border: solid 1px #e1e1e1;
+  background-color: #fff;
+  margin-top: 16px;
+  padding: 10px 142px 10px 10px;
+}
+
+.down-menu__input {
+  position: relative;
+}
+
+.down-menu__right__input{
+  width: $width__menu__input;
+  margin-left: calc($width__container - $width__menu__input);
+}
+
+.down-menu__input i {
+  position: absolute;
+  right: 10px;
+  top: 34px;
+  color: gray;
+}
+
+.down-menu__menu {
+  display: flex;
+  font-family: Cousine,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+.down-menu__menu li:not(:last-of-type){
+  padding-right: 50px;
+}
+
+/*Main*/
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 378px;
+  background-color: #ccc;
+  padding-bottom: 377px;
+}
+
+.text-1{
+  font-family: Cousine,sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 0.1;
+  text-align: left;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.text-2{
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+  font-family: MerriweatherSans,sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: -5px;
+}
+
+.text-3{
+  font-family: Roboto,sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #4c4c4c;
+}
+
+.text-4{
+  font-family: MerriweatherSans,sans-serif;
+  font-size: 14.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.text-4 i{
+  padding-left: 5px;
+}
+
+.circle-left{
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right{
+  color: white;
+  padding: 10px;
+}
