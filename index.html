@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="style/main.css" />
     <script src="https://kit.fontawesome.com/3c90ede047.js" crossorigin="anonymous"></script>
     <title>Hard-Adaptive</title>
+    <link rel="stylesheet" href="style/main.scss" />
   </head>
   <body>
     <header>
@@ -388,7 +390,7 @@
         <div class="bottom__line"></div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer container__center">
       <div class="footer__box">
         <section class="footer__left">
           <div class="footer__left__about">
@@ -469,8 +471,164 @@
             /><i class="fa-solid fa-chevron-right"></i>
           </div>
         </section>
-        <section class="footer__center"></section>
-        <section class="footer__right"></section>
+        <section class="footer__center">
+          <div class="footer__left__most-favorite">
+            <div class="left__item__title">
+              <div>MOST FAVORITE</div>
+              <div class="left__item__pagination">
+                <div class="item__pagination__circle"><i class="fa-solid fa-2xs fa-chevron-left"></i></div>
+                <div class="item__pagination__circle"><i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+              </div>
+            </div>
+            <div class="left__item__box">
+              <div class="left__item__card-left">
+                <img alt="" class="item__favorite__img" src="" />
+                <div class="item__favorite__text">
+                  <div class="favorite__text__desc">Black puplum <br />waist tie kudu <br />dress</div>
+                  <div class="favorite__text__cost">$478</div>
+                </div>
+              </div>
+              <div class="left__item__card-right">
+                <img alt="" class="item__favorite__img" src="" />
+                <div class="item__favorite__text">
+                  <div class="favorite__text__desc">Pale pink and <br />black buttoned <br />dress</div>
+                  <div class="favorite__text__cost">$478</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__twitter">
+            <div class="left__item__title">
+              <div>TWITTER</div>
+              <button class="left__item__twitter-button">follow</button>
+            </div>
+            <div class="twitter-item">
+              <div class="left__item__twitter">
+                <div class="twitter__item">
+                  <img alt="" class="item__twitter__img" src="" />
+                  <div class="item__twitter__text">
+                    <div class="twitter__text__desc">Promokit</div>
+                    <div class="twitter__text__cost">@marek_mnishek</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__twitter__desc">
+                Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo ornare
+                laoreet. Proin luctus viverra bit.ly/1byZ6QM
+              </div>
+              <div class="left__twitter__bottom">
+                <div class="left__twitter__bottom__left">9 October 2013</div>
+                <div class="left__twitter__bottom__right">
+                  <div class="reply"><i class="fa-solid fa-reply"></i>Reply</div>
+                  <div class="retweet"><i class="fa-solid fa-retweet"></i>Retweet</div>
+                </div>
+              </div>
+            </div>
+            <div class="twitter-item">
+              <div class="left__item__twitter">
+                <div class="twitter__item">
+                  <img alt="" class="item__twitter__img" src="" />
+                  <div class="item__twitter__text">
+                    <div class="twitter__text__desc">Promokit</div>
+                    <div class="twitter__text__cost">@marek_mnishek</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__twitter__desc">
+                Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo ornare
+                laoreet. Proin luctus viverra bit.ly/1byZ6QM
+              </div>
+              <div class="left__twitter__bottom">
+                <div class="left__twitter__bottom__left">9 October 2013</div>
+                <div class="left__twitter__bottom__right">
+                  <div class="reply"><i class="fa-solid fa-reply"></i>Reply</div>
+                  <div class="retweet"><i class="fa-solid fa-retweet"></i>Retweet</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__facebook">
+            <div class="left__item__title">
+              <div>FACEBOOK</div>
+              <button class="left__item__twitter-button">LIKE</button>
+            </div>
+            <div class="left__facebook__like">1452 people like <span>PromoKit</span></div>
+            <div class="left__facebook__block">
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+            </div>
+          </div>
+        </section>
+        <section class="footer__right">
+          <div class="footer__right__information">
+            <div class="information__title">INFORMATION</div>
+            <a href="" class="information__link">New products</a>
+            <a href="" class="information__link">Top sellers</a>
+            <a href="" class="information__link">Specials products</a>
+            <a href="" class="information__link">Manufacturers</a>
+            <a href="" class="information__link">Suppliers</a>
+            <a href="" class="information__link">Our stores</a>
+          </div>
+          <div class="footer__right__my-account">
+            <div class="information__title">MY ACCOUNT</div>
+            <a href="" class="information__link">My account</a>
+            <a href="" class="information__link">Personal information</a>
+            <a href="" class="information__link">Addresses</a>
+            <a href="" class="information__link">Discount</a>
+            <a href="" class="information__link">Orders history</a>
+            <a href="" class="information__link">Your Vouchers</a>
+          </div>
+          <div class="footer__right__customer">
+            <div class="information__title">CUSTOMER SERVICE</div>
+            <a href="" class="information__link">Help & contact</a>
+            <a href="" class="information__link">Shipping & taxes</a>
+            <a href="" class="information__link">Return policy</a>
+            <a href="" class="information__link">Careers</a>
+            <a href="" class="information__link">Affiliates</a>
+            <a href="" class="information__link">Legal Notice</a>
+          </div>
+          <div class="footer__right__contact-info">
+            <div class="information__title">CONTACT INFO</div>
+            <a href="" class="information__link">Vigo Shop Ltd</a>
+            <a href="" class="information__link">United Kingdom</a>
+            <a href="" class="information__link">London 02587 </a>
+            <a href="" class="information__link">Oxford Street 48/188</a>
+            <a href="" class="information__link">Working days: Mon. - Sun.</a>
+            <a href="" class="information__link">Working hours: 9 AM - 8 PM</a>
+          </div>
+        </section>
+      </div>
+      <div class="footer__bottom container">
+        <div class="footer__bottom__left">
+          <div class="bottom__left__item">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+          <div class="copyright">© 2013 Powered by WooCommerce™. All Rights Reserved.</div>
+        </div>
+        <div class="footer__bottom__right">
+          <div class="bottom__left__social">
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+          <div class="circle-top"><i class="fa-solid fa-angle-up"></i></div>
+        </div>
       </div>
     </footer>
   </body>
