@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 a {
@@ -25,7 +26,7 @@ p{
 @import "_vars";
 
 .container {
-  width: $width__container;
+  max-width: $width__container;
   margin: 0 auto;
 }
 
@@ -111,11 +112,8 @@ header{
   padding: 10px 10px 10px 0;
 }
 
-.down-menu__input {
-  margin-left: auto;
-}
-
 .down-menu__right__input {
+  width: 13.54vw;
   font-family: MerriweatherSans, sans-serif;
   font-size: 11px;
   text-align: left;
@@ -123,22 +121,18 @@ header{
   border: solid 1px #e1e1e1;
   background-color: #fff;
   margin-top: 16px;
-  padding: 10px 142px 10px 10px;
+  padding: 10px 24px 10px 10px;
 }
 
 .down-menu__input {
-  position: relative;
-}
-
-.down-menu__right__input{
-  width: $width__menu__input;
-  margin-left: calc($width__container - $width__menu__input);
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .down-menu__input i {
-  position: absolute;
-  right: 10px;
-  top: 34px;
+  margin-left: -1.4vw;
+  transform: translate(-1vw);
   color: gray;
 }
 
@@ -233,14 +227,14 @@ header{
 }
 
 .circle-left{
-  margin-left: 35px;
+  margin-left: 1.82vw;
   border: solid 2px white;
   border-radius: 50%;
 }
 .circle-right{
   border: solid 2px white;
   border-radius: 50%;
-  margin-right: 35px;
+  margin-right: 1.82vw;
 }
 
 .circle-left .fa-chevron-left,
@@ -255,7 +249,7 @@ header{
 }
 
 .text{
-  margin-right: 348px;
+  margin-right: 18.125vw;
 }
 
 .main__pagination{
@@ -284,7 +278,7 @@ header{
 
 .card__box{
   display: grid;
-  grid-template-columns: repeat(2, 370px) 370px;
+  grid-template-columns: repeat(2, 31.6%) 31.6%;
   grid-template-rows: 430px repeat(2, 250px);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -340,7 +334,8 @@ header{
 .content__top{
   display: flex;
   align-items: end;
-  padding: 0 33px;
+  justify-content: center;
+  padding: 0 1.71vw;
 }
 
 .card-1__content{
@@ -351,14 +346,14 @@ header{
 }
 
 .card__line{
-  width: 101px;
+  width: 5.26vw;
   height: 3px;
   border-bottom: 3px solid white;
 }
 
 .card-title{
   font-family: Cousine,sans-serif;
-  font-size: 40px;
+  font-size: 2.75vw;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -374,7 +369,7 @@ header{
 
 .card__desc{
   font-family: Roboto,sans-serif;
-  font-size: 25px;
+  font-size: 1.3vw;
   font-weight: normal;
   font-stretch: condensed;
   font-style: normal;
@@ -389,7 +384,7 @@ header{
 
 .card__sale{
   font-family: MerriweatherSan,sans-serif;
-  font-size: 14.5px;
+  font-size: 0.755vw;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -412,14 +407,14 @@ header{
 }
 
 .card-2__line{
-  width: 45px;
+  width: 2.34vw;
   height: 1px;
   border-bottom: 1px solid black;
 }
 
 .card-2-title{
   font-family: MerriweatherSans,sans-serif;
-  font-size: 25px;
+  font-size: 1.3vw;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -628,7 +623,7 @@ header{
 .card-6__bottom{
   margin-bottom: 60px;
   font-family: Roboto,sans-serif;
-  font-size: 25px;
+  font-size: 1.3vw;
   font-stretch: condensed;
   text-transform: uppercase;
   text-align: center;
@@ -846,13 +841,9 @@ header{
   align-content: stretch;
 }
 
-.footer__left{
-  width: 850px;
-}
-
 .footer__left__about{
   padding-top: 90px;
-  padding-left: 375px;
+  padding-left: 19.53vw;
   padding-bottom: 60px;
   border-right: 1px dashed #2a2a2a;
   border-bottom: 1px dashed #2a2a2a;
@@ -909,13 +900,13 @@ header{
 
 .footer__left__from-the-blog,
 .footer__left__quick{
-  padding: 60px 25px 59px 375px;
+  padding: 60px 25px 59px 19.53vw;
   border-right: 1px dashed #2a2a2a;
   border-bottom: 1px dashed #2a2a2a;
 }
 
 .footer__left__enter{
-  padding: 60px 25px 155px 375px;
+  padding: 60px 25px 155px 19.53vw;
   border-right: 1px dashed #2a2a2a;
 }
 
@@ -1231,19 +1222,25 @@ header{
 }
 
 .footer__right__information{
-  display: flex;
-  flex-direction: column;
-  padding: 89px 515px 40px 24px;
   border-bottom: 1px dashed #2a2a2a;
 }
 
 .information__title{
+  padding: 60px 40.067% 40px 24px;
+  display: flex;
+  flex-direction: column;
   font-family: $font__Cousine;
   font-size: 17px;
   text-align: left;
   color: #b6b6b6;
   margin-bottom: 20px;
 }
+
+.footer__right__information .information__title{
+  padding-top: 90px;
+}
+
+
 
 .information__link{
   font-family: $font__Arial;
@@ -1257,22 +1254,18 @@ header{
 .footer__right__my-account{
   display: flex;
   flex-direction: column;
-  padding: 60px 464px 40px 24px;
   border-bottom: 1px dashed #2a2a2a;
 }
 
-.footer__right__customer
-{
+.footer__right__customer {
   display: flex;
   flex-direction: column;
-  padding: 60px 464px 40px 24px;
   border-bottom: 1px dashed #2a2a2a;
 }
 
 .footer__right__contact-info{
   display: flex;
   flex-direction: column;
-  padding: 60px 454px 40px 24px;
 }
 
 .bottom__left__item > img{
@@ -1297,6 +1290,8 @@ header{
   justify-content: space-between;
   align-items: start;
   padding-bottom: 35px;
+  margin-left: 19.53vw;
+  margin-right: 4.16vw;
 }
 
 .social{
@@ -1316,18 +1311,16 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 12.5vw;
 }
 
 .footer__bottom__right{
-  position: relative;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
 .circle-top{
-  position: absolute;
-  right: -88%;
   border: solid 2px #999;
   border-radius: 50%;
 }
@@ -1339,11 +1332,8 @@ header{
 
 @media (max-width: 980px) {
   .container{
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
-  }
-  .down-menu__right__input{
-    margin-left: 683px;
   }
 
   .down-menu{
@@ -1555,7 +1545,7 @@ header{
   .footer__right__contact-info,
   .footer__right__my-account,
   .footer__right__customer{
-    padding-right: 0;
+    padding-right: 100%;
   }
 
   .left__item__card-right{
