@@ -100,16 +100,11 @@ header{
   margin-top: 16px;
 }
 
-.down-menu__search span {
-  padding: 10px 142px 10px 10px;
-}
-
 .down-menu__search .fa-magnifying-glass {
   padding: 10px 10px 10px 0;
 }
 
 .down-menu__right__input {
-  width: 100%;
   font-family: MerriweatherSans, sans-serif;
   font-size: 11px;
   text-align: left;
@@ -124,12 +119,14 @@ header{
   display: flex;
   justify-content: end;
   align-items: center;
+  position: relative;
 }
 
 .down-menu__input i {
-  margin-left: -1.4%;
-  transform: translate(-1vw);
   color: gray;
+  position: absolute;
+  top:33px;
+  right: 12px;
 }
 
 .down-menu__menu {
@@ -833,20 +830,33 @@ header{
 .footer{
   background-color: #1f1f1f;
   height: 100%;
-  width: 99.1vw;
+  width: 100%;
 }
 
 .footer__left{
-  width: 42.1%;
+  width: 46.12%;
+}
+
+.footer__left__about,
+.footer__left__from-the-blog,
+.footer__left__quick,
+.footer__left__enter{
+  display: flex;
+  justify-content: end;
 }
 
 .footer__left__about{
-  padding: 90px 25px 60px 44.05%;
+  padding-top: 90px;
+  padding-right: 25px;
+  padding-bottom: 60px;
   border-right: 1px dashed #2a2a2a;
   border-bottom: 1px dashed #2a2a2a;
 }
 
 .left__item__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 34px;
   font-family: $font__Cousine;
   font-size: 17px;
@@ -898,13 +908,41 @@ header{
 
 .footer__left__from-the-blog,
 .footer__left__quick{
-  padding: 60px 25px 59px 44.05%;
+  padding-top: 90px;
+  padding-right: 25px;
+  padding-bottom: 60px;
   border-right: 1px dashed #2a2a2a;
   border-bottom: 1px dashed #2a2a2a;
 }
 
+.about__wrapper,
+.from-the-blog__wrapper,
+.quick__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.quick__wrapper{
+  width: 435px;
+}
+
+.enter__wrapper{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+
+.enter__wrapper i{
+  position: absolute;
+  right: 10px;
+  color: #cccccc;
+}
+
 .footer__left__enter{
-  padding: 60px 25px 155px 44.05%;
+  padding-top: 90px;
+  padding-right: 25px;
+  padding-bottom: 155px;
   border-right: 1px dashed #2a2a2a;
 }
 
@@ -916,8 +954,8 @@ header{
 }
 
 
-.item__card__img:last-of-type{
-  padding-right: 25px;
+.left__item__card:first-child .item__card__img{
+  margin-right: 25px
 }
 
 .item__card__desc{
@@ -963,7 +1001,7 @@ header{
 .quick__form{
   display: flex;
   flex-direction: column;
-  width: 215px;
+  width: 100%;
 }
 
 .quick__form>input{
@@ -1005,11 +1043,12 @@ header{
 }
 
 .left__enter__input{
-  width: 450px;
+  width: 435px;
   border: solid 1px #666;
   background: transparent;
   padding: 15px 0 10px 15px;
   font-family: $font__Cousine;
+  text-transform: uppercase;
   font-size: 13px;
   color: #888;
 }
@@ -1028,7 +1067,6 @@ header{
 }
 
 .footer__center{
-  width: 20.89%;
   height: 100%;
   border-right: 1px dashed #2a2a2a;
 }
@@ -1176,7 +1214,7 @@ header{
 }
 
 .footer__left__facebook{
-  padding: 35px 24px 139px 24px;
+  padding: 35px 24px 64% 24px;
 }
 
 .footer__left__facebook>.left__item__title{
@@ -1229,7 +1267,9 @@ header{
 }
 
 .information__title{
-  padding: 60px 40.067% 40px 24px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 24px;
   display: flex;
   flex-direction: column;
   font-family: $font__Cousine;
@@ -1478,10 +1518,6 @@ header{
     justify-content: start;
   }
 
-  .left__item__card{
-    margin-right: 20px;
-  }
-
   .item__card__desc br{
     display: none;
   }
@@ -1501,7 +1537,7 @@ header{
   }
 
   .map__img{
-    width: 370px;
+    width: 100%;
     height: 140px;
     margin-bottom: 20px;
   }
@@ -1515,11 +1551,7 @@ header{
   }
 
   .item__box__text div{
-    width: 187px;
-  }
-
-  .footer__left{
-    width: 42.3vw;
+    width:182px;
   }
 
   .item__favorite__img{
@@ -1535,20 +1567,13 @@ header{
     margin-right: 30px;
   }
 
+  .facebook__block:nth-child(3n){
+    margin-right: 0;
+  }
+
   .facebook__block:nth-child(7),
   .facebook__block:nth-child(8){
     display: none;
-  }
-
-  .footer__center{
-    width: 32.653%;
-  }
-
-  .footer__right__information,
-  .footer__right__contact-info,
-  .footer__right__my-account,
-  .footer__right__customer{
-    padding-right: 100%;
   }
 
   .left__item__card-right{
@@ -1564,4 +1589,55 @@ header{
     text-align: justify;
   }
 
+  .footer__left__about, .footer__left__from-the-blog, .footer__left__quick, .footer__left__enter{
+    justify-content: start;
+  }
+
+  .footer__left{
+    width: 43%;
+  }
+
+  .quick__wrapper,
+  .about__wrapper,
+  .enter__wrapper{
+    width: 100%;
+  }
+
+  .enter__wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .enter__wrapper i{
+    position: absolute;
+    right: 10px;
+    color: #cccccc;
+  }
+
+  .map__img{
+    margin-right: 0;
+  }
+
+  .footer__center{
+    width: 50%;
+  }
+
+  .footer__left__facebook{
+    padding-bottom: 59%;
+  }
+
+  .footer__left__enter {
+    padding-bottom: 55px;
+  }
+
+  .footer__bottom{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom__left__social{
+    margin-right: 20px;
+  }
 }
