@@ -1366,6 +1366,14 @@ header {
   color: #999;
 }
 
+.footer__bottom__circle {
+  display: none;
+}
+
+.down-menu__input .down-menu__left {
+  display: none;
+}
+
 @media (max-width: 980px) {
   .container {
     max-width: 940px;
@@ -1602,6 +1610,9 @@ header {
   .down-menu__box .down-menu__left {
     display: none;
   }
+  .down-menu__input .down-menu__left {
+    display: block;
+  }
   .down-menu__input {
     display: flex;
     justify-content: space-between;
@@ -1793,7 +1804,14 @@ header {
   .footer__bottom__left {
     margin-right: 30px;
   }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer__bottom__circle {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
   }
   .left__item__card-right {
@@ -1834,8 +1852,7 @@ header {
   .footer__right__information .information__title {
     padding-top: 60px;
   }
-  .footer__right__information .information__title,
-.footer__right__my-account .information__title,
+  .footer__right__my-account .information__title,
 .footer__right__customer .information__title,
 .footer__right__contact-info .information__title {
     padding-top: 40px;
