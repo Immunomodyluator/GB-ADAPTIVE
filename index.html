@@ -2,7 +2,687 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <script src="https://kit.fontawesome.com/3c90ede047.js" crossorigin="anonymous"></script>
     <title>Hard-Adaptive</title>
+    <link rel="stylesheet" href="style/main.scss" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header__top">
+        <div class="top-menu container">
+          <div class="top-menu__left">
+            <a href="#" class="top-menu__left__link">My Account</a>
+            <a href="#" class="top-menu__left__link">MY Wishlist (0)</a>
+            <a href="#" class="top-menu__left__link">Checkout</a>
+            <a href="#" class="top-menu__left__link">Log In <span> or Register</span></a>
+          </div>
+          <div class="top-menu__right">
+            <a href="#" class="top-menu__right__link">US Dollar<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#" class="top-menu__right__link">English<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#" class="top-menu__right__link">My Bag: 0 item(s)</a>
+          </div>
+        </div>
+      </div>
+      <div class="down-menu container">
+        <div class="top-menu__bottom">
+          <a href="#" class="top-menu__right__link">US Dollar<i class="fa-solid fa-angle-down"></i></a>
+          <a href="#" class="top-menu__right__link">English<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+        <div class="down-menu__input">
+          <div class="down-menu__left">
+            <img src="style/img/logo.png" alt="" class="down-menu__logo" /><span>FENGO</span>
+          </div>
+          <div class="down-menu__input__register">Log In or register</div>
+          <label>
+            <input
+              aria-label=""
+              type="text"
+              name=""
+              id=""
+              class="down-menu__right__input"
+              placeholder="Find it here..."
+            />
+            <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+          </label>
+        </div>
+        <div class="down-menu__box">
+          <div class="down-menu__left">
+            <img src="style/img/logo.png" alt="" class="down-menu__logo" /><span>FENGO</span>
+          </div>
+          <div class="down-menu__right">
+            <menu class="down-menu__menu">
+              <li class="menu__item">Fashion</li>
+              <li class="menu__item">Electronics</li>
+              <li class="menu__item">Gifts</li>
+              <li class="menu__item">Books</li>
+              <li class="menu__item">At Home</li>
+              <li class="menu__item">Music</li>
+              <li class="menu__item">Sale</li>
+            </menu>
+          </div>
+        </div>
+        <div class="down-menu__burger">
+          <div class="burger__left"><i class="fa-solid fa-bars"></i>NAVIGATION</div>
+          <div class="burger__right"><i class="fa-solid fa-cart-shopping"></i>$0.00</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__box">
+        <div class="circle-left"><i class="fa-solid fa-2xs fa-chevron-left"></i></div>
+        <div class="main__text__container">
+          <div class="text">
+            <div class="text-1">Check your</div>
+            <br />
+            <div class="text-2">autumn <br />style</div>
+            <br />
+            <div class="text-3">All the trends you need <br />this season</div>
+            <br />
+            <div class="text-4">read it now<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+          </div>
+          <div class="circle-right"><i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <div class="main__pagination">
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+    </main>
+    <section class="card">
+      <div class="card__top">
+        <div class="content__box">
+          <div class="content__top">
+            <div class="card__line"></div>
+            <div class="card-title">you pay less</div>
+            <div class="card__line"></div>
+          </div>
+          <div class="card__desc">everyone else pays attention.</div>
+          <div class="card__sale">get your discount<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <div class="card__box container">
+        <div class="card-1">
+          <div class="circle-left"><i class="fa-solid fa-2xs fa-chevron-left"></i></div>
+          <div class="card-1__content">
+            <div class="content__box">
+              <div class="content__top">
+                <div class="card__line"></div>
+                <div class="card-title">exclusive</div>
+                <div class="card__line"></div>
+              </div>
+              <div class="card__desc">discount codes & offers</div>
+            </div>
+            <div class="card__sale">get your discount<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+          </div>
+          <div class="circle-right"><i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+        </div>
+        <div class="card-2">
+          <div class="card-2__text">
+            <div class="card-2__text-top">the</div>
+            <div class="card-2__text-box">
+              <div class="card-2__line"></div>
+              <div class="card-2-title">hottest styles</div>
+              <div class="card-2__line"></div>
+            </div>
+            <div class="card-2__text-bottom">ARE HERE</div>
+          </div>
+          <div class="card-2__bottom">watch now<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+        </div>
+        <div class="card-3"><span>what's new?</span></div>
+        <div class="card-4">
+          <div class="card-4__text">
+            <div class="card-4__text-top">LOOKBOOK</div>
+            <div class="card-4__text-box">
+              <div class="card-4__line"></div>
+              <div class="card-4-title">women</div>
+              <div class="card-4__line"></div>
+            </div>
+            <div class="card-4__text-bottom">autumn 2013</div>
+            <div class="card-4__text-link">get the look<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+            <div class="card-4__pagination">
+              <i class="fa-regular fa-circle"></i>
+              <i class="fa-regular fa-circle"></i>
+              <i class="fa-regular fa-circle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-5">
+          <div class="card-5__text">
+            jewelry<br />
+            <span>every third item is free!</span>
+          </div>
+          <div class="card-5__link">buy now<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+        </div>
+        <div class="card-6">
+          <div class="card-6__text-box">
+            <div class="card-6__line"></div>
+            <div class="card-6-title">accessories</div>
+            <div class="card-6__line"></div>
+          </div>
+          <div class="card-6__bottom">Complete your style</div>
+          <div class="card-6__link">get the look<i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </section>
+    <section class="shop container">
+      <menu class="shop__nav">
+        <li class="shop__link">new arrivals</li>
+        <li class="shop__link">Featured</li>
+        <li class="shop__link">Special</li>
+        <li class="shop__link">bestsellers</li>
+      </menu>
+      <div class="shop__box">
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+          <div class="item__box-banner">-50%</div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+          <div class="item__box-banner black">NEW</div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+          <div class="item__box-banner gray">Out of <br />stock</div>
+        </div>
+        <div class="box__item">
+          <div class="item__img"></div>
+          <div class="item__text">
+            <div class="item__text__left">
+              <span class="item__text__name">Carded Cotton Shaw <br />Cardigan</span>
+            </div>
+            <div class="item__text__right">
+              <div class="item__text__coast">$187</div>
+            </div>
+          </div>
+          <div class="item__score">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-regular fa-star fa-xs"></i>
+          </div>
+          <button class="item__button">ADD TO BAG <span>|</span> MORE INFO</button>
+          <div class="item__text__bottom">
+            <div class="item__text__left">+ Add to Wishlist</div>
+            <div class="item__text__right">+ Add to Compare</div>
+          </div>
+          <div class="item__box-color">
+            <div class="item__color black"></div>
+            <div class="item__color blue"></div>
+            <div class="item__color red"></div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__bottom">
+        <div class="bottom__line"></div>
+        <span>Show More</span>
+        <div class="bottom__line"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__box">
+        <section class="footer__left">
+          <div class="footer__left__about">
+            <div class="about__wrapper">
+              <div class="left__item__title">About fengo shop</div>
+              <div class="left__item__box-text">
+                <img alt="" class="item__box__img" src="" />
+                <div class="item__box__text">
+                  <div>
+                    Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac venenatis venenatis, ipsum ligula
+                    auctor lectus,suscipit velit quam quis turpis. Sed lobortis laoreet risus vitae tincidunt. Ut
+                    consectetur nec purus in egestas.Pellentesque vehicula urna purus.
+                  </div>
+                  <a href="#" class="box__text__link">Read more<i class="fa-solid fa-2xs fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__from-the-blog">
+            <div class="from-the-blog__wrapper">
+              <div class="left__item__title">
+                <div>From the Blog</div>
+                <div class="left__item__pagination">
+                  <div class="item__pagination__circle"><i class="fa-solid fa-2xs fa-chevron-left"></i></div>
+                  <div class="item__pagination__circle"><i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+                </div>
+              </div>
+              <div class="left__item__box">
+                <div class="left__item__card">
+                  <img alt="" class="item__card__img" src="" />
+                  <div class="item__card__desc">Pellentesque vehicula <br />urna purus</div>
+                </div>
+                <div class="left__item__card">
+                  <img alt="" class="item__card__img" src="" />
+                  <div class="item__card__desc">Curabitur faucibus aliquam<br />felis quis</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__quick">
+            <div class="quick__wrapper">
+              <div class="left__item__title">QUICK CONTACT</div>
+              <div class="left__item__box">
+                <img alt="" class="map__img" src="" />
+                <form action="" class="quick__form">
+                  <input
+                    aria-label=""
+                    type="text"
+                    name=""
+                    id="quick__form__name"
+                    class="quick__form__name"
+                    placeholder="Enter your name"
+                  />
+                  <input
+                    aria-label=""
+                    type="email"
+                    name=""
+                    id="quick__form__email"
+                    class="quick__form__email"
+                    placeholder="Enter your E-mail"
+                  />
+                  <input
+                    aria-label=""
+                    type="text"
+                    name=""
+                    id="quick__form__message"
+                    class="quick__form__message"
+                    placeholder="Enter your message"
+                  />
+                  <button class="quick__form__button" type="button">
+                    Send message <i class="fa-solid fa-2xs fa-chevron-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__enter">
+            <div class="enter__wrapper">
+              <input
+                aria-label=""
+                type="text"
+                name=""
+                class="left__enter__input"
+                placeholder="Enter your e-mail for stay in the know"
+              /><i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </section>
+        <section class="footer__center">
+          <div class="footer__left__most-favorite">
+            <div class="left__item__title">
+              <div>MOST FAVORITE</div>
+              <div class="left__item__pagination">
+                <div class="item__pagination__circle"><i class="fa-solid fa-2xs fa-chevron-left"></i></div>
+                <div class="item__pagination__circle"><i class="fa-solid fa-2xs fa-chevron-right"></i></div>
+              </div>
+            </div>
+            <div class="left__item__box">
+              <div class="left__item__card-left">
+                <img alt="" class="item__favorite__img" src="" />
+                <div class="item__favorite__text">
+                  <div class="favorite__text__desc">Black puplum <br />waist tie kudu <br />dress</div>
+                  <div class="favorite__text__cost">$478</div>
+                </div>
+              </div>
+              <div class="left__item__card-right">
+                <img alt="" class="item__favorite__img" src="" />
+                <div class="item__favorite__text">
+                  <div class="favorite__text__desc">Pale pink and <br />black buttoned <br />dress</div>
+                  <div class="favorite__text__cost">$478</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__twitter">
+            <div class="left__item__title">
+              <div>TWITTER</div>
+              <button class="left__item__twitter-button">follow</button>
+            </div>
+            <div class="twitter-item">
+              <div class="left__item__twitter">
+                <div class="twitter__item">
+                  <img alt="" class="item__twitter__img" src="" />
+                  <div class="item__twitter__text">
+                    <div class="twitter__text__desc">Promokit</div>
+                    <div class="twitter__text__cost">@marek_mnishek</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__twitter__desc">
+                Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo ornare
+                laoreet. Proin luctus viverra bit.ly/1byZ6QM
+              </div>
+              <div class="left__twitter__bottom">
+                <div class="left__twitter__bottom__left">9 October 2013</div>
+                <div class="left__twitter__bottom__right">
+                  <div class="reply"><i class="fa-solid fa-reply"></i>Reply</div>
+                  <div class="retweet"><i class="fa-solid fa-retweet"></i>Retweet</div>
+                </div>
+              </div>
+            </div>
+            <div class="twitter-item">
+              <div class="left__item__twitter">
+                <div class="twitter__item">
+                  <img alt="" class="item__twitter__img" src="" />
+                  <div class="item__twitter__text">
+                    <div class="twitter__text__desc">Promokit</div>
+                    <div class="twitter__text__cost">@marek_mnishek</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__twitter__desc">
+                Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo ornare
+                laoreet. Proin luctus viverra bit.ly/1byZ6QM
+              </div>
+              <div class="left__twitter__bottom">
+                <div class="left__twitter__bottom__left">9 October 2013</div>
+                <div class="left__twitter__bottom__right">
+                  <div class="reply"><i class="fa-solid fa-reply"></i>Reply</div>
+                  <div class="retweet"><i class="fa-solid fa-retweet"></i>Retweet</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__left__facebook">
+            <div class="left__item__title">
+              <div>FACEBOOK</div>
+              <button class="left__item__twitter-button">LIKE</button>
+            </div>
+            <div class="left__facebook__like">1452 people like <span>PromoKit</span></div>
+            <div class="left__facebook__block">
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+              <div class="facebook__block"></div>
+            </div>
+          </div>
+        </section>
+        <section class="footer__right">
+          <div class="footer__right__information">
+            <div class="information__title">
+              INFORMATION
+              <a href="" class="information__link">New products</a>
+              <a href="" class="information__link">Top sellers</a>
+              <a href="" class="information__link">Specials products</a>
+              <a href="" class="information__link">Manufacturers</a>
+              <a href="" class="information__link">Suppliers</a>
+              <a href="" class="information__link">Our stores</a>
+            </div>
+          </div>
+          <div class="footer__right__my-account">
+            <div class="information__title">
+              MY ACCOUNT
+              <a href="" class="information__link">My account</a>
+              <a href="" class="information__link">Personal information</a>
+              <a href="" class="information__link">Addresses</a>
+              <a href="" class="information__link">Discount</a>
+              <a href="" class="information__link">Orders history</a>
+              <a href="" class="information__link">Your Vouchers</a>
+            </div>
+          </div>
+          <div class="footer__right__customer">
+            <div class="information__title">
+              CUSTOMER
+              <a href="" class="information__link">Help & contact</a>
+              <a href="" class="information__link">Shipping & taxes</a>
+              <a href="" class="information__link">Return policy</a>
+              <a href="" class="information__link">Careers</a>
+              <a href="" class="information__link">Affiliates</a>
+              <a href="" class="information__link">Legal Notice</a>
+            </div>
+          </div>
+          <div class="footer__right__contact-info">
+            <div class="information__title">
+              CONTACT INFO
+              <a href="" class="information__link">Vigo Shop Ltd</a>
+              <a href="" class="information__link">United Kingdom</a>
+              <a href="" class="information__link">London 02587 </a>
+              <a href="" class="information__link">Oxford Street 48/188</a>
+              <a href="" class="information__link">Working days: Mon. - Sun.</a>
+              <a href="" class="information__link">Working hours: 9 AM - 8 PM</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom__left">
+          <div class="bottom__left__item">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+          <div class="copyright-top">© 2013 Powered by WooCommerce™. All Rights Reserved.</div>
+        </div>
+        <div class="footer__bottom__right">
+          <div class="bottom__left__social">
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+          <div class="circle-top"><i class="fa-solid fa-angle-up"></i></div>
+        </div>
+        <div class="copyright-bottom">© 2013 Powered by WooCommerce™. All Rights Reserved.</div>
+      </div>
+      <div class="footer__bottom__circle">
+        <div class="circle-top"><i class="fa-solid fa-angle-up"></i></div>
+      </div>
+    </footer>
+  </body>
 </html>
